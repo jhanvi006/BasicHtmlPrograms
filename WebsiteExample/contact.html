@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OneClick - Contact</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Arizonia&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <a href="index.html">OneClick</a>
+        <!-- <input type="text" placeholder="Search.."> -->
+    </header>
+    <div class="main-container">
+        <aside class="sidebar sidebar-left">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="">About Us</a></li>
+                <li><a href="galleries.html">Galleries</a></li>
+                <li><a href="">Education</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </aside>
+        <section class="main-container-item">
+            <form action="">
+                <h2>Contact Form</h2>
+                <div>
+                    <label for="uname">Name:</label>
+                    <input type="text" id="uname" name="uname">
+                    <error-output class="name-error" for="uname"></error-output>
+                </div>
+                <div>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email">
+                    <error-output class="email-error" for="email"></error-output>
+                </div>
+                <div>
+                    <label for="dob">Birth Date:</label>
+                    <input type="date" id="dob" name="dob">
+                    <error-output class="dob-error" for="dob"></error-output>
+                </div>
+                <div>
+                    <label for="mobileNo">Mobile No:</label>
+                    <input type="tel" id="mobileNo" name="mobileNo">
+                    <error-output class="mob-error" for="mobileNo"></error-output>
+                </div>
+                <div>
+                    <label for="inquiry">Inquiry for?</label>
+                    <select name="inquiry" id="inquiry">
+                        <option value="Select a option" selected disabled>Select a option</option>
+                        <option value="In-home events">In-home events</option>
+                        <option value="Outdoor events">Outdoor events</option>
+                        <option value="Coaching Session">Coaching session</option>
+                        <option value="Others">Others</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="comment">Comment:</label>
+                    <textarea name="comment" id="comment" cols="15" rows="3" placeholder="Share what's on your mind!"></textarea>
+                </div>
+                <div>
+                    <button type="submit">Share Message</button>
+                </div>
+            </form>
+        </section>
+        <aside class="sidebar sidebar-right">
+            <h2>Latest News</h2>
+        </aside>
+    </div>
+    <footer>
+        <a href=""><img class="footer-img" src="https://cdn-icons-png.flaticon.com/512/87/87390.png" alt="instagram"></a>
+        <a href=""><img class="footer-img" src="https://cdn-icons-png.flaticon.com/512/152/152810.png" alt="youtube"></a>
+        <a href=""><img class="footer-img" src="https://cdn-icons-png.flaticon.com/512/1051/1051329.png" alt="pinterest"></a>
+    </footer>
+    <script src="js/validation.js"></script>
+</body>
+</html>

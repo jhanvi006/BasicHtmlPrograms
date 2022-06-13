@@ -1,0 +1,145 @@
+* {
+    box-sizing: border-box;
+}
+body{
+    padding: 0em;
+    background-color: rgb(209, 206, 177);
+    color: #2b2b2b;
+    font-family: cursive;
+}
+/* header styling */
+header{
+    display: flex;
+    padding: 10px;
+    flex-flow: column wrap;
+    align-content: flex-start;
+}
+header a{
+    text-decoration: none;
+    font-size: 80px;
+    font-family: 'Arizonia', cursive;
+    color: #2b2b2b;
+    text-shadow: 4px 4px 0px rgba(0,0,0,0.1);
+    position: fixed;
+    margin-left: 2%;
+}
+header input[type=text] {
+    float: right;
+    padding: 6px;
+    border: none;
+}
+/* main container */
+.main-container{
+    display: flex;
+    flex-flow: row wrap;
+    font-weight: bold;
+    text-align: center;
+    height: 500px;
+    /* overflow: scroll; */
+}
+article{
+    padding: 2%;
+    margin: 0% 10%;
+    text-align: justify;
+}
+.main-container-item{
+    text-align: left;
+    order: 2;
+    flex: 3;
+    margin-top: 10%;
+    height: 500px;
+    overflow: scroll;
+}
+/* side bars */
+.sidebar{
+    flex: 1;
+    height: 300px;
+    overflow: scroll;
+}
+.sidebar-left{
+    order: 1;
+    border-right: 1.5px ridge #2b2b2b;
+    border-radius: 1%;
+}
+.sidebar-right{
+    order: 3;
+    border-left: 1.5px ridge #2b2b2b;
+    border-radius: 1%;
+}
+/* Menu items */
+li{
+    list-style-type: none;
+    line-height: 2em;
+    text-align: left;
+}
+li a{
+    text-decoration: none;
+    color: #2b2b2b;
+}
+/* footer */
+footer{
+    display: flex;
+    flex-flow: row wrap;
+    align-content: center;
+    justify-content: center ;
+    font-weight: bold;
+    padding-top: 10%;
+    position: relative;
+}
+.footer-img{
+    width: 30px;
+    margin: 15px;
+}
+/* form */
+form{
+    margin: 10px;
+    text-align: center;
+}
+div{
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+label, input, select, textarea, button{
+    width: 10%;
+    font-size: 16px;
+    line-height: 1.5;
+    font-family: cursive;
+}
+label{
+    text-align: right;
+    width: 30%;
+    margin-right: 2%;
+}
+input, textarea{
+    flex: auto;
+}
+select{
+    width: 68%;
+}
+button{
+    width: 68%;
+    margin-left: auto;
+}
+error-output{
+    font-size: 12px;
+    font-style: italic;
+    color: red;
+}
+/* image container */
+.img-container{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 5px;
+    justify-content: space-between;
+}
+.img-container-item{
+    margin: 5px;
+}
+/* media query */
+@media (max-width: 768px){
+    .sidebar-right{
+        display: none;
+    }
+}
